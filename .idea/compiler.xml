@@ -7,10 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
-        <module name="study-spring-cloud" />
         <module name="eureka-client" />
+        <module name="config-client" />
         <module name="service-feign" />
         <module name="service-ribbon" />
+        <module name="config-server" />
         <module name="service-zuul" />
         <module name="eureka-client (1)" />
       </profile>
@@ -18,6 +19,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-client" options="-parameters" />
+      <module name="config-server" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-client (1)" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
