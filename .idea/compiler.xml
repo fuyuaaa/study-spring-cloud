@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="service-ribbon" />
-        <module name="eureka-client" />
         <module name="eureka-server" />
-        <module name="eureka-client (1)" />
         <module name="study-spring-cloud" />
+        <module name="eureka-client" />
+        <module name="service-feign" />
+        <module name="service-ribbon" />
+        <module name="eureka-client (1)" />
       </profile>
     </annotationProcessing>
   </component>
@@ -19,6 +20,7 @@
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-client (1)" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="service-feign" options="-parameters" />
       <module name="service-ribbon" options="-parameters" />
     </option>
   </component>
